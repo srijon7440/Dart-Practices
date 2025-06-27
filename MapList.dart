@@ -22,5 +22,9 @@ main(){
   avg=sum/count;
   Avg.add(double.parse(avg.toStringAsFixed(2)));
   }
-  print(Avg);
+  Map<String,dynamic>info={};
+  for(int i=0;i<Avg.length;i++){
+    info[Student[i]['Name']]=Avg[i];
+  }
+  print(info);
 }
